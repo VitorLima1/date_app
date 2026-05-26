@@ -788,6 +788,10 @@
 
     const updateFinalDetails = (food) => {
       finalDetails.innerHTML = "";
+      
+      const legenda = document.querySelector(".final-text");
+            
+      legenda.textContent = `Que bom que você não disse não. Esteja pronta às ${timeInput.value}, estou indo te buscar! 🚗`;
 
       const details = [
         `📅 ${formatDate(dateInput.value)}`,
